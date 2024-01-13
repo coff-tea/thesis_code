@@ -1,0 +1,30 @@
+save_name: DEFAULT
+folders:
+  data: Data
+  results: Results
+  load: Load
+  temp: Temp
+data: 
+  mode: mnist
+  prefix: dec12_eilat
+  modifier: 1.0
+  channel: 1
+  synth: dec12_eilat_polyfit
+  class: 0
+  polyfit: 3
+  w_mean: 2.5
+  w_sd: 1
+  w_k: 0
+  i_mean: 1
+  i_sd: 1
+  i_k: 0
+training:
+  max_epochs: 200
+  stop_after: 50
+  print_status: 1
+  checkpoint: 25
+  batch_size: 32
+  train_perc: 0.9
+  improve_margin: 0.001
+replicable: True
+seed: 42

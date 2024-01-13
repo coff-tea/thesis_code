@@ -1,0 +1,36 @@
+save_name: DEFAULT
+folders:
+  data: Data
+  results: Results
+  load: Load
+  temp: Temp
+data:
+  prefix: mnist
+  channels: 2 
+  dim: 28
+  max_data: 10000
+  class: 10
+  hyp: nil
+  paras: nil
+  cparas: nil
+training:
+  examples: 4
+  max_epochs: 100
+  stop_after: 20
+  ema_coeff: 0.95
+  print_status: 10
+  batch_size: 32
+  train_split: 0.8
+  max_tune: 100
+  improve_margin: 0.0001
+  save_every: 10
+  tune_trials: 5
+replicable: True
+seed: 42
+defaults:
+  lr: 0.0001
+  dropout: 0.1
+  beta1: 0.0001
+  beta2: 0.02
+  n_T: 400 
+  features: 128

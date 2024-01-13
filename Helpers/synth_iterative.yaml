@@ -1,0 +1,54 @@
+save_name: DEFAULT
+folders:
+  data: Data
+  results: Results
+  load: Load
+  temp: Temp
+data:
+  synth: dec12_eilat_polyfit
+  prefix: dec12_eilat
+  channel: 1
+  dim: 224
+paras:
+  polyfit_min: 3
+  polyfit_max: 5
+  modi_min: 0.05
+  modi_max: 0.2
+  width_min: 0.5
+  width_max: 10
+  width_mean_min: 0
+  width_mean_max: 5
+  width_sd_min: 0
+  width_sd_max: 5
+  width_k_min: 3
+  width_k_max: 155
+  intensity_mean_min: 0
+  intensity_mean_max: 1
+  intensity_sd_min: 0
+  intensity_sd_max: 3
+  intensity_k_min: 3
+  intensity_k_max: 155
+  gauss_kernel_min: 0.01
+  gauss_kernel_max: 5.0
+training:
+  max_epochs: 1000
+  stop_after: 20
+  print_status: 5
+  batch_size: 32
+  train_split: 0.8
+  tune_trials: 1
+  improve_margin: 0.001
+  max_trials: 75
+  fid_margin: 0.0001
+replicable: True
+seed: 42
+defaults:
+  dropout: 0.5
+  lr: 0.0002
+  decay: 0.000001
+  beta1: 0.9
+  beta2: 0.99
+  pos: 2
+paras:
+  width_min: 0.5
+  width_max: 10

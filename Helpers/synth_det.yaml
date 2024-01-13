@@ -1,0 +1,27 @@
+save_name: DEFAULT
+folders:
+  data: Data
+  results: Results
+  load: Load
+  temp: Temp
+data:
+  synth: dec12_eilat_polyfit
+  prefix: dec12_eilat
+  channel: 1
+  dim: 224
+training:
+  max_epochs: 1000
+  stop_after: 20
+  print_status: 5
+  batch_size: 256
+  train_split: 0.8
+  improve_margin: 0.001
+replicable: True
+seed: 42
+defaults:
+  dropout: 0.5
+  lr: 0.0002
+  decay: 0.000001
+  beta1: 0.9
+  beta2: 0.99
+  pos: 2
