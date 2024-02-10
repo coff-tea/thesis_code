@@ -252,7 +252,6 @@ num_test = len(testloader.dataset)
 g_models = []
 d_models = [] 
 iso_list = []
-pos_list = []
 # Losses of models
 g_losses = []
 d_losses = []
@@ -270,11 +269,6 @@ for epoch in range(yaml["training"]["max_epochs"]):   # For each epoch
     d_trick = 0
     f_trick = 0
     for i, data in enumerate(trainloader, 0):    # For each batch
-        if pos_list == []:
-            pos_list = data[0].cpu()
-            plt.imshow(data[0][0][0].cpu(), cmap="Greys_r")
-            plt.axis("off")
-            plt.savefig(f"Temp/showmepos.png")
         ############################
         # (1) Update D network
         ###########################
@@ -364,7 +358,6 @@ save_dict["d_losses"] = d_losses
 save_dict["d_tricked"] = d_tricked
 save_dict["f_tricked"] = f_tricked
 save_dict["iso_list"] = iso_list
-save_dict["pos_list"] = pos_list
 save_dict["f_noise"] = f_noise.cpu()
 save_dict["hyper"] = (lr, smooth, beta1, beta2, decay)
 save_dict["penalties"] = pen_mod
