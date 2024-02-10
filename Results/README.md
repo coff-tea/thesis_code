@@ -30,9 +30,11 @@ For K-cross validation:
   - KEY: "loss" <br>
     VALUE: List of TR loss at every epoch
   - KEY: "perf" <br>
-    VALUE: Tuple of model's final performance when saved at best TR loss and associated statistics `(TR loss, TR acc, epoch where best was found, TE loss, TE acc, TE FA, TE MD)` <br><br>
+    VALUE: Tuple of model's final performance when saved at best TR loss and associated statistics `(TR loss, TR acc, epoch where best was found, TE loss, TE acc, TE FA, TE MD)` <br>
+    
 For hyperparameter tuning:
-  - OPTUNA_DICT with best validation loss as optimization value  <br><br>
+  - OPTUNA_DICT with best validation loss as optimization value  <br>
+  
 For model training:
 - KEY: "hyper" <br>
   VALUE: Dictionary of hyperparameters used keyed by name
