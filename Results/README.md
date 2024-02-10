@@ -12,7 +12,7 @@ Saves the relevant optimization or runtime results, depending on the task. Note:
 - FA: false alarm rate
 - MD: missed detection rate
 
-## OPTUNA_DICT: Anything generated using optuna
+### OPTUNA_DICT: Anything generated using optuna
 Each entry in the dictionary is an optimization trial. When running, if the file name to be generated exists, the existing trials are loaded as historical information. Optimization trials often take long periods of time and this allows many more trials to be run than can be accomplished in one session.
 - KEY: Integer indicates that this is the nth run trial  <br>
   VALUE: Dictionary as follows... 
@@ -21,7 +21,7 @@ Each entry in the dictionary is an optimization trial. When running, if the file
   - KEY: Name of optimized parameter, as many as exist <br>
     VAL: Value that used to generate this trial's value
 
-## `cross_tune_train.py`
+### `cross_tune_train.py`
 For K-cross validation:
 - KEY: Indicates which fold is used as test set (e.g. "fold1") <br>
   VALUE: Dictionary as follows...
@@ -54,18 +54,18 @@ _optional keys, depending on runtime arguments_
 - KEY: "starting" <br>
   VAL: Name of mode file where training starts at
 
-## `generate_diffusion.py` 
+### `generate_diffusion.py` 
   
-## `generate_diffusion_samples.py` 
+### `generate_diffusion_samples.py` 
   
-## `generate_gan.py` 
+### `generate_gan.py` 
   
-## `generate_gan_samples.py`
+### `generate_gan_samples.py`
 
-## `synth_det.py` 
+### `synth_det.py` 
 
-## `synth_dis.py`
+### `synth_dis.py`
   
-## `synth_iterative.py`
+### `synth_iterative.py`
   
-## `synth_optimize.py` 
+### `synth_optimize.py` 
