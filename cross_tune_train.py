@@ -296,7 +296,6 @@ if args.mode == "cross":
         #------------------ Get test performance
         model.load_state_dict(torch.load(f"{yaml['folders']['temp']}/best.pt"))
         test_loss, test_acc, test_fa, test_md = eval_dataloader(testloader)
-        cv_perf[d_key] = (best_tloss, best_tacc, best_at, test_loss, test_acc, test_fa, test_md)
         #------------------ Save to dictionary
         iter_dict = dict()
         iter_dict["acc"] = train_accs
