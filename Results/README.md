@@ -14,11 +14,11 @@ Saves the relevant optimization or runtime results, depending on the task. Note:
 
 ## `cross_tune_train.py`
 For K-cross validation:
-  - KEY: Indicates which fold is used as test set (e.g. "fold1")
+  - KEY: Indicates which fold is used as test set (e.g. "fold1") <br>
     VALUE: dictionary as follows...
-    - KEY: "acc"
+    - KEY: "acc" <br>
       VALUE: list of training accuracies at every epoch
-    - KEY: "loss"
+    - KEY: "loss" <br>
       VALUE: list of training losses at every epoch
-    - KEY: "perf"
+    - KEY: "perf" <br>
       VALUE: tuple of model's final performance when saved at best training loss and associated statistics `(TR loss, TR acc, epoch where best was found, TE loss, TE acc, TE FA, TE MD)`
