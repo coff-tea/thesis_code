@@ -10,6 +10,7 @@ Dolphin whistle detection and generation using spectrogram images. Work and refe
 - `Load`: Location of results/models that will be used. For example: use a pretrained model, save here and specify as appropriate.
 - `Results`: Location for runtime results to be saved. For example: trained a detector, find .pt file here.
 - `Temp`: Temporary files that are not in use but are momentarily saved.
+More information can be found within the folders themselves.
 
 ## Code files
 More specifics can be found within the code files. Sparse details about functionality and how to run can be found below. All will use the folders as explained above unless a custom/changed .yaml file is specified.
