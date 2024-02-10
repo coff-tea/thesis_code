@@ -401,8 +401,6 @@ test_loss, test_acc, test_fa, test_md = eval_dataloader(testloader)
 print("\n-----Test results: ", test_loss, test_acc)
 train_perf["hyper"] = hyper
 train_perf["ttv"] = (len(trainloader.dataset), len(testloader.dataset), len(valloader.dataset))
-train_perf["pos_samples_used"] = pos_samples_used
-train_perf["unn_samples_used"] = unn_samples_used
 train_perf["train_hist"] = (train_losses, train_accs)
 train_perf["val_hist"] = (val_losses, val_accs)
 train_perf["best"] = (best_vloss, best_vacc, best_at, stopped_epoch)
