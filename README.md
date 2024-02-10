@@ -22,7 +22,7 @@ For a whistle detector (output [0,1] for probability that spectrogram contains w
 - DATA specifies the format that data should be composed in from a set list
 
 ### Synthetic Optimization
-`synth_det.py`
+`synth_det.py` <br>
 For a given set of parameters, generate synthetic whistle contours overlaid onto negative backgrounds. Perform whistle detection by training a model with this synthetic set and a disjoint set of negative spectrograms. Baseline requires: `python synth_det.py ORIGIN DIRECTION KTH MODEL`
 - ORIGIN specifies parameter file for synthetic whistle generation containing a dictionary of parameters associated with some score
 - DIRECTION specifies how the score is optimized (i.e. maximal or minimal)
