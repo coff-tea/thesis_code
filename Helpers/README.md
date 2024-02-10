@@ -1,1 +1,1 @@
-
+Helper files used within main code files. All .yaml files are associated with a counterpart .py and provide less ephemeral information for runtime. Explanations for functions within each file can be found within the code.
