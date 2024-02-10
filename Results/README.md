@@ -53,3 +53,19 @@ _optional keys, depending on runtime arguments_
   VAL: Multiplier for number of consecutive epochs needed with no change before training stops
 - KEY: "starting" <br>
   VAL: Name of mode file where training starts at
+
+## `generate_diffusion.py` 
+  
+## `generate_diffusion_samples.py` 
+  
+## `generate_gan.py` 
+  
+## `generate_gan_samples.py`
+
+## `synth_det.py` 
+
+## `synth_dis.py`
+  
+## `synth_iterative.py`
+  
+## `synth_optimize.py` 
