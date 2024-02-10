@@ -46,6 +46,7 @@ For model training:
   VAL: Tuple of model's final performance when saved at best VA loss and associated statistics `(VA loss, VA acc, epoch where best was found, epoch when training stopped)`
 - KEY: "test" <br>
   VAL: Tuple of model's final performance when saved at best VA loss and associated statistics `(TE loss, TE acc, TE FA, TE MD)` <br>
+  
 _optional keys, depending on runtime arguments_
 - KEY: "percent" <br>
   VAL: Portion of training set used, value in (0, 1)
@@ -179,13 +180,6 @@ Models dictionary, if elected to save:
   VAL: Tuple of model's final performance when saved at best VA loss and associated statistics `(VA loss, VA acc, epoch where best was found, epoch when training stopped)`
 - KEY: "test" <br>
   VAL: Tuple of model's final performance when saved at best VA loss and associated statistics `(TE loss, TE acc, TE FA, TE MD)` <br>
-_optional keys, depending on runtime arguments_
-- KEY: "percent" <br>
-  VAL: Portion of training set used, value in (0, 1)
-- KEY: "longer" <br>
-  VAL: Multiplier for number of consecutive epochs needed with no change before training stops
-- KEY: "starting" <br>
-  VAL: Name of mode file where training starts at
   
 ### `synth_iterative.py`
   
