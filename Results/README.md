@@ -132,7 +132,7 @@ Models dictionary, if elected to save:
   - KEY: Integer for index of which model in a list is used <br>
     VAL: Discriminator outputs for generated random images
 
-### `synth_det.py` 
+### `synth_det.py`, `synth_iterative.py`
 - KEY: Argument name <br>
   VAL: Argument value (all possible command line arguments and their values, default or specified)
 - KEY: "hyper" <br>
@@ -181,6 +181,5 @@ Models dictionary, if elected to save:
 - KEY: "test" <br>
   VAL: Tuple of model's final performance when saved at best VA loss and associated statistics `(TE loss, TE acc, TE FA, TE MD)` <br>
   
-### `synth_iterative.py`
-  
 ### `synth_optimize.py` 
+- OPTUNA_DICT with appropriate optimization value depending on chosen parameters
